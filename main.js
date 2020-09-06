@@ -1,10 +1,12 @@
 var mainPageForm = document.querySelector("select-course");
 
-var letsCookButton = document.querySelector(."lets-cook-button");
-var clearButton = document.querySelector(."clear-button");
-var recipeButton = document.querySelector(."recipe-button");
-var foodMenu = document.querySelector(."food");
-var cookPotImage = document.querySelector(."cookpot");
+var letsCookButton = document.querySelector("lets-cook-button");
+var clearButton = document.querySelector("clear-button");
+var recipeButton = document.querySelector("recipe-button");
+var foodMenu = document.querySelector("food");
+var cookPotImage = document.querySelector("cookpot");
+var suggestions = document.querySelector("suggestions");
+var clearButton = document.querySelector("clear-button");
 
 //Event Listeners:
 letsCookButton.addEventListener("submit", courseSelector);
@@ -33,8 +35,8 @@ function addNewButtonHandler() {
 }
 
 //functions:
-function hideCookPot() {
-  //when let's cook button" is clicked, cookpot img disappears
+function getRandomIndex(array) {
+  return Math.floor(Math.random() * array.length);
 }
 
 function chooseSideDish() {
@@ -54,4 +56,18 @@ function chooseEntireMeal() {
   //chooseSideDish();
   //chooseMainDish();
   //chooseDessert();
+}
+
+function showCookpot() {
+  //when let's cook button" is clicked, cookpot img disappears
+  //class.classList.remove/add("hidden")
+  cookPotImage.classList.add("hidden");
+}
+
+function showClearButton() {
+  clearButton.classList.remove("hidden");
+}
+
+function showSuggestions() {
+  clearButton.classList.remove("hidden");
 }
