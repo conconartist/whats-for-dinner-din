@@ -1,15 +1,93 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14pt;
+  background: url(file:///Users/connie/whats-for-dinner-din/assets/burger-friends.jpg);
+  background-size: cover;
+  overflow: hidden;
+  color: black;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: stretch;
+}
 
-h1 {
-  color: teal - #0fb9b1;
+#header {
+  background-color: #0fb9b1;
+  padding: 15px;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: 30px;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
-.primary-font {
-  font {
-    font-family: 'Roboto', sans-serif;
-  }
+
+.recipe-button {
+  color: black;
+  background-color: rgba(225, 225, 225, .9);
+  margin-right: 30px;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px;
 }
+
+#boxes {
+  margin-top: 8px;
+  margin-left: 90px;
+  margin-right: 100px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  color: black;
+}
+
 .box {
-  color: frosted white - rgba(225, 225, 225, .9);
+  padding: 45px;
+  height: 310px;
+  width: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(225, 225, 225, .9);
 }
 
-// grey - #95a5a6;
-// red - #ee5253
+p {
+  font-size: 150%;
+  font-style: bold;
+}
+
+.starting-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.lets-cook-button {
+  background-color: #0fb9b1;
+  border: 0;
+  margin-bottom: 20px;
+  width: 200px;
+  border-radius: 10px;
+  padding: 9px;
+}
+
+.cookpot {
+  padding: 30px;
+  margin: 30px;
+  height: 200px;
+  width: 160px;
+  color: black;
+  display: flex;
+  align-self: center;
+}
+
+em {
+  color: #ee5253}
+
+/* grey #95a5a6; */
