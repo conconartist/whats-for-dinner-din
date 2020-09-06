@@ -1,3 +1,4 @@
+
 var mainPageForm = document.querySelector("select-course");
 
 var letsCookButton = document.querySelector("lets-cook-button");
