@@ -68,7 +68,7 @@ p {
   flex-direction: column;
 }
 
-.lets-cook-button {
+.lets-cook-button, legend {
   background-color: #0fb9b1;
   border: 0;
   margin-bottom: 20px;
@@ -77,6 +77,9 @@ p {
   padding: 9px;
 }
 
+.lets-cook-button:active {
+  color: #95a5a6;
+}
 .cookpot {
   padding: 30px;
   margin: 30px;
@@ -87,7 +90,30 @@ p {
   align-self: center;
 }
 
+.clear-button {
+  background-color: #95a5a6;
+  color: rgba(225, 225, 225, .9);
+  border: 0;
+  border-radius: 10px;
+  padding: 9px;
+}
+
+.add-new {
+  background-color: rgba(225, 225, 225, .9);
+  display: flex;
+}
+
+.add-new-button {
+  background-color: #0fb9b1;
+  border: 0;
+  margin-bottom: 20px;
+  width: 200px;
+  border-radius: 10px;
+  padding: 9px;
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+}
+
 em {
   color: #ee5253}
-
-/* grey #95a5a6; */
