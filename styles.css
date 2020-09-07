@@ -13,6 +13,10 @@ body {
   justify-content: stretch;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 #header {
   background-color: #0fb9b1;
   padding: 15px;
@@ -58,6 +62,11 @@ body {
   background-color: rgba(225, 225, 225, .9);
 }
 
+.box:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+
 p {
   font-size: 150%;
   font-style: bold;
@@ -68,7 +77,7 @@ p {
   flex-direction: column;
 }
 
-.lets-cook-button, legend {
+.lets-cook-button {
   background-color: #0fb9b1;
   border: 0;
   margin-bottom: 20px;
@@ -82,23 +91,48 @@ p {
 }
 
 .cookpot {
-  padding: 20px;
-  margin: 30px;
-  margin-top: 80px;
+  /* padding: 0px; */
+  /* margin: 30px; */
+  margin-top: 20px;
   height: 200px;
   width: 160px;
   color: black;
+  /* margin-left: 9%; */
+  /* margin-right: 20%; */
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  /* justify-content:*/
+}
+
+.suggestions {
+  margin: auto;
+  position: relative;
+  /* margin-top: 20px; */
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  /* justify-content: space-around; */
+}
+
+.suggestions-text {
+  font-size: 200%;
+  font-style: normal;
   display: flex;
   align-self: center;
-  justify-content: space-around;
 }
 
 .clear-button {
+  margin: 10px;
   background-color: #95a5a6;
   color: rgba(225, 225, 225, .9);
   border: 0;
   border-radius: 10px;
   padding: 9px;
+  height: 25px;
+  width: 30%;
+  align-content: center;
 }
 
 footer {
@@ -127,10 +161,6 @@ footer {
   display: flex;
   align-self: center;
   justify-content: center;
-}
-
-.hidden {
-  visibility: hidden;
 }
 
 em {

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
     <title>What's for Dinner?</title>
   </head>
   <body>
@@ -11,7 +12,7 @@
     </h2>
     <section id="boxes">
       <form>
-        <section class="box" "starting-menu">
+        <section class="box starting-menu">
         <p>What are you looking for?<em>*</em></p>
           <section class="food">
             <input type="radio" id="side" name="select-course" value="side" checked>
@@ -23,23 +24,24 @@
             <input type="radio" id="entire-meal" name="select-course" value="entire-meal">
             <label for="entire-meal">Entire Meal</label><br><br>
           </section>
-        <button class="lets-cook-button" type="submit">LET'S COOK!</button>
+        <button class="lets-cook-button" type="click">LET'S COOK!</button>
         </section>
       </form>
       <section class="box">
-        <div class="view cookpot">
-        <img class="view cookpot-image" src="file:///Users/connie/whats-for-dinner-din/assets/cookpot.svg" alt="cookpot image">
-        </div>
-        <div class="view suggestions hidden">You should make:
-        <button class="view clear-button hidden">CLEAR</button>
-        </div>
+        <section class="view suggestions hidden"><b>You should make:</b>
+          <section class= "view suggestions-text"></section>
+          <button class="view clear-button hidden">CLEAR</button>
+        </section>
+        <section class="view cookpot">
+          <img class="view cookpot-image" src="file:///Users/connie/whats-for-dinner-din/assets/cookpot.svg" alt="cookpot image">
+        </section>
       </section>
     </section>
     <footer>
-      <div class="view add-new hidden">
-        <div>Recipe Type:Recipe Name:</div>
+      <section class="view add-new hidden">
+        <section>Recipe Type:Recipe Name:</div>
       <button class="view add-new-button hidden">ADD NEW</button>
-    </div>
+    </section>
     </footer>
   </body>
   <script type="text/javascript" src="main.js"></script>
