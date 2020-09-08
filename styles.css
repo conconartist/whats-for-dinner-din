@@ -62,9 +62,10 @@ body {
   background-color: rgba(225, 225, 225, .9);
 }
 
-.box:nth-child(2) {
+.suggestion-box {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-self: center;
 }
 
@@ -101,12 +102,11 @@ p {
 }
 
 .suggestions {
-  position: absolute;
-  /* margin-top: 20px; */
+  margin-top: 60px;
   font-style: italic;
   display: flex;
   flex-direction: column;
-  align-self: center;
+  align-items: center;
   justify-content: center;
 }
 
@@ -115,11 +115,15 @@ p {
   font-style: normal;
   display: flex;
   align-self: center;
+  justify-content: center;
+  max-width: 70%;
+  max-height: 90%;
 }
 
 .clear-button {
-  margin-left: 375px;
-  margin-top: 320px;
+  position: absolute;
+  margin-left: 200px;
+  margin-top: 127px;
   background-color: #95a5a6;
   color: rgba(225, 225, 225, .9);
   border: 0;
@@ -127,7 +131,6 @@ p {
   padding: 10px;
   height: 35px;
   width: 80px;
-  display: flex;
   justify-content: center;
   align-content: center;
 }
@@ -135,7 +138,6 @@ p {
 footer {
   display: flex;
   flex-direction: row;
-    /* margin-bottom: 40px; */
 }
 
 .add-new {
